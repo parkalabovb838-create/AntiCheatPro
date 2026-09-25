@@ -1,0 +1,89 @@
+server-lock:
+  enabled: true
+  expected-motd: "§cBogdan Server §7| §6No Cheats"
+  expected-host: "bogdand.aternos.me"
+  expected-port: 25565
+  expected-owner: "bogdan2016tttt"
+
+license:
+  enabled: false
+  key: "GOOD-BOGD-2025-0001"
+  api-url: "https://your-api.com/check"
+
+anti-tamper:
+  enabled: false
+  expected-hash: ""
+
+detection:
+  cps-enabled: true
+  cps-max: 14
+  cheater-cps-max: 8
+  angle-enabled: true
+  angle-max: 12.0
+  cheater-angle-max: 8.0
+  reach-enabled: true
+  reach-max: 3.8
+  cheater-reach-max: 3.2
+  gcd-enabled: true
+  gcd-min: 0.05
+  cheater-gcd-min: 0.10
+  rotation-enabled: true
+  rotation-max-delta: 180.0
+  snap-enabled: true
+  multi-aura-enabled: true
+  multi-aura-max-targets: 2
+  triggerbot-enabled: true
+  triggerbot-min-delay: 40
+  autoclicker-enabled: true
+  autoclicker-max-cps: 12
+  fly-enabled: true
+  speed-enabled: true
+
+legitimacy:
+  enabled: true
+  min-hits: 20
+  legit-threshold: 60
+
+ai:
+  enabled: true
+  model-path: "model.onnx"
+  threshold: 0.80
+
+discord:
+  enabled: true
+  webhook-url: "https://discord.com/api/webhooks/1552773581992362084/H0KThJ8lOw0osmkzYKrS5YSXeIJqrOMlXLW1Lg9xLAL-9GKOM2q2wPVppI6-SNQ21Cc9"
+  username: "ANTICHEAT"
+  min-vl-to-send: 2
+  cooldown-seconds: 5
+
+telegram:
+  enabled: true
+  bot-token: "ВСТАВЬ_ТОКЕН"
+  chat-id: "ВСТАВЬ_CHAT_ID"
+
+auto-follow:
+  enabled: true
+  at-vl: 10
+
+patrol-bots:
+  count: 10
+
+ping-kick:
+  enabled: true
+  max-ping: 410
+  owner-max-ping: 600
+
+punishment:
+  alerts-only: false
+  kick-at-vl: 0
+  ban-at-vl: 25
+  ban-days: 50
+  ban-owner-too: true
+  ban-message: "§cВы забанены на этом сервере на 50 дней\n§cАНТИЧИТ bogdand.aternos.me"
+
+alerts:
+  message: "&c[ANTICHEAT] &f%player% &7- &e%check% &7(VL:&c%vl%&7)"
+  sound: true
+
+watermark:
+  build-id: "BOGDAN-EXCLUSIVE-0001"
